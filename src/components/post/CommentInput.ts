@@ -66,6 +66,10 @@ commentInputTemplate.innerHTML = `
   </form>
   `;
 
+/**
+ * Input field for adding comments to a post.
+ */
+
 export class CommentInput extends HTMLElement {
   postId: number;
   form: HTMLFormElement;

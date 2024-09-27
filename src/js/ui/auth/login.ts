@@ -1,6 +1,10 @@
 import { login } from "@api/auth/login";
 import { APILoginRequest } from "@/types/types";
 
+/**
+ * Handles the login form submission.
+ */
+
 export async function onLogin(event: Event) {
   event.preventDefault();
 

@@ -26,6 +26,10 @@ deleteButtonTemplate.innerHTML = `
   </button>
 `;
 
+/**
+ * Button that allows the user to delete a post.
+ */
+
 export class DeleteButton extends HTMLElement {
   // Debouncing state
   private isProcessing: boolean = false;

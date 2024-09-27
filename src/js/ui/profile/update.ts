@@ -2,6 +2,10 @@ import { updateProfile } from "@/js/api/profile/update";
 import { uploadImage } from "@/js/api/imgur/imgur";
 import { getUser } from "@/js/utilities/getUser";
 
+/**
+ * Handles the update profile form submission.
+ */
+
 export async function onUpdateProfile(event: Event) {
   event.preventDefault();
   const updateProfileBtn = document.querySelector(

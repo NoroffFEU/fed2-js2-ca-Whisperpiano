@@ -17,6 +17,10 @@ async function loadExplorePage() {
   }
 }
 
+/**
+ * Renders all posts for the explore page.
+ */
+
 export async function renderAllPosts() {
   const postsContainer = document.getElementById("posts") as HTMLUListElement;
   const getAllPosts = (await readPosts({ page: page })) as AllPostsResponse;
@@ -60,6 +64,10 @@ export async function renderAllPosts() {
     }
   }
 }
+
+/**
+ * Loads the pagination for the explore page.
+ */
 
 async function loadPagination() {
   const scrollSection = document.querySelector(

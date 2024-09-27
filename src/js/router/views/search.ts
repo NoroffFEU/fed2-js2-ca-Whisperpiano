@@ -17,6 +17,11 @@ async function loadSearchPage() {
   }
 }
 
+/**
+ * Renders the search results for the search page.
+ * @param query The search query.
+ */
+
 async function renderSearch(query: string) {
   const searchContainer = document.querySelector("#search") as HTMLElement;
   const getFollowingUsers = await getUserProfile();

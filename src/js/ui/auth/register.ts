@@ -1,6 +1,10 @@
 import { register } from "@api/auth/register";
 import { APIRegisterRequest } from "@/types/types";
 
+/**
+ * Handles the register form submission.
+ */
+
 export async function onRegister(event: Event) {
   event.preventDefault();
 

@@ -12,6 +12,10 @@ function loadPostPage() {
   }
 }
 
+/**
+ * Retrieves the post to render and renders it.
+ */
+
 export async function getPostToRender() {
   const postContainer = document.querySelector("#posts") as HTMLElement;
 

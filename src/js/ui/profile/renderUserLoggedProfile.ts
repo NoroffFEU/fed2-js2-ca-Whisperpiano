@@ -2,6 +2,10 @@ import { getUser } from "@/js/utilities/getUser";
 import { readProfile } from "@/js/api/profile/read";
 import { UserLoggedProfile } from "@/components/profile/UserLoggedProfile";
 
+/**
+ * Loads the profile page for the logged user.
+ */
+
 export async function loadUserLoggedProfile() {
   if (
     window.location.pathname === "/" ||

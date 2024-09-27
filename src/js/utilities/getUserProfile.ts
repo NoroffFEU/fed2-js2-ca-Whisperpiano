@@ -1,7 +1,10 @@
 import { readProfile } from "../api/profile/read";
 import { getUser } from "./getUser";
 
-// Function to get user logged profile data
+/**
+ * Retrieves the user's logged profile data.
+ * @returns {object} The user's profile data.
+ */
 
 export async function getUserProfile() {
   const user = getUser();

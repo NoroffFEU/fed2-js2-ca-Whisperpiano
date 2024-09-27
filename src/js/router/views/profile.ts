@@ -12,6 +12,10 @@ async function loadProfilePage() {
   }
 }
 
+/**
+ * Loads the profile page.
+ */
+
 async function loadProfile() {
   const profileContainer = document.querySelector("#posts") as HTMLUListElement;
 

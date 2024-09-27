@@ -73,6 +73,10 @@ commentTemplate.innerHTML = `
   </article>
 `;
 
+/**
+ * Template for displaying a comment.
+ */
+
 export class CommentTemplate extends HTMLElement {
   commentId: number;
   postId: number;

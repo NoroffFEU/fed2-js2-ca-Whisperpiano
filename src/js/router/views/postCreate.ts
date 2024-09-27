@@ -14,6 +14,10 @@ function loadPostCreatePage() {
   }
 }
 
+/**
+ * Sets the valid types for the create post form.
+ */
+
 function setValidTypes() {
   const input = document.querySelector(
     "input[type='file']"

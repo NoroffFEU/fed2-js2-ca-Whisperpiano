@@ -23,6 +23,10 @@ editProfileTemplate.innerHTML = `
   </button>
 `;
 
+/**
+ * Button that allows the user to edit their profile.
+ */
+
 export class EditProfile extends HTMLElement {
   constructor() {
     super();

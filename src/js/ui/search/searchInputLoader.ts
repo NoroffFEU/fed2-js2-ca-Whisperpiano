@@ -1,3 +1,7 @@
+/**
+ * Loads the search input for the search page.
+ */
+
 export function loadSearchInput() {
   const form = document.forms.namedItem("search");
   if (!form) return;
@@ -9,6 +13,12 @@ export function loadSearchInput() {
     searchInputListener(e, searchInput.value)
   );
 }
+
+/**
+ * Handles the search input submission.
+ * @param e The event object.
+ * @param value The search query.
+ */
 
 function searchInputListener(e: Event, value: string) {
   e.preventDefault();

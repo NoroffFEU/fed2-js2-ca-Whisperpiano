@@ -35,6 +35,10 @@ homeProfileTemplate.innerHTML = `
   </div>
 `;
 
+/**
+ * Component that displays the profile of the logged user.
+ */
+
 export class UserLoggedProfile extends HTMLElement {
   private post: ProfileResponse | null = null;
 

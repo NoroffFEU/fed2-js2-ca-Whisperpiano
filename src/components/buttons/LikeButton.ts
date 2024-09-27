@@ -22,6 +22,10 @@ likeButtonTemplate.innerHTML = `
   </button>
 `;
 
+/**
+ * Button that allows the user to like or unlike a post.
+ */
+
 export class LikeButton extends HTMLElement {
   private isProcessing: boolean = false;
   reactions: number;

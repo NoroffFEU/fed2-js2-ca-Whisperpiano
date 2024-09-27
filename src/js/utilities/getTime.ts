@@ -1,4 +1,9 @@
-// Function to get time difference between two dates and return it in a readable format
+/**
+ * Retrieves the time difference between two dates and returns it in a readable format.
+ *
+ * @param {Date} date - The date to compare with the current date.
+ * @returns {string} The time difference in a readable format.
+ */
 
 export function getTime(date: Date) {
   const dateNow = new Date();

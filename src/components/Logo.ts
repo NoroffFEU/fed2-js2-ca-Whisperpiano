@@ -17,6 +17,10 @@ logoTemplate.innerHTML = `
   <img class="logo" src="/images/noroff-logo-white.png" alt="Noroff Logo" />
 `;
 
+/**
+ * Component that displays the logo.
+ */
+
 class Logo extends HTMLElement {
   constructor() {
     super();

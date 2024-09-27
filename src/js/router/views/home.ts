@@ -17,6 +17,12 @@ async function loadHomePage() {
   }
 }
 
+/**
+ * Renders all posts for the home page.
+ * @param page The page number to render.
+ * Since the API does not support pagination for the user logged + user following, this function will render all posts and then paginate them.
+ */
+
 export async function renderPosts(page: number) {
   const postsContainer = document.getElementById("posts") as HTMLUListElement;
   const user = getUser();
@@ -82,6 +88,10 @@ export async function renderPosts(page: number) {
     postsContainer.appendChild(li);
   }
 }
+
+/**
+ * Loads the pagination for the home page.
+ */
 
 async function loadPagination() {
   const scrollSection = document.querySelector(

@@ -2,6 +2,10 @@ import { getId } from "@/js/utilities/getId";
 import { updatePost } from "@api/post/update";
 import { uploadImage } from "@/js/api/imgur/imgur";
 
+/**
+ * Handles the update post form submission.
+ */
+
 export async function onUpdatePost(event: Event) {
   event.preventDefault();
 

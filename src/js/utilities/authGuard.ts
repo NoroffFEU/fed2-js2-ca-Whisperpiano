@@ -1,4 +1,6 @@
-// Function to redirect to login page if user is not authenticated
+/**
+ * Redirects the user to the login page if they are not authenticated.
+ */
 
 export function authGuard() {
   if (

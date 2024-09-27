@@ -18,6 +18,10 @@ async function loadProfileEditPage() {
   }
 }
 
+/**
+ * Sets the valid types for the edit profile form.
+ */
+
 function setValidTypes() {
   const avatarInput = document.querySelector(
     "#profile-avatar"
@@ -35,6 +39,10 @@ function setValidTypes() {
   avatarInput.addEventListener("change", checkValidTypes);
   bannerInput.addEventListener("change", checkValidTypes);
 }
+
+/**
+ * Populates the bio field of the edit profile form.
+ */
 
 async function populateBio() {
   const bioInput = document.querySelector("#bio") as HTMLTextAreaElement;

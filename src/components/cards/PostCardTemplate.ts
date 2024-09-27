@@ -10,6 +10,17 @@ import { CardProfile } from "@/components/profile/CardProfiles";
 
 import { getUser } from "@/js/utilities/getUser";
 
+/**
+ * Creates a post HTML element.
+ *
+ * @param {PostResponse} post - The post object to create the HTML element from.
+ * @param {boolean} isFollowing - Whether the user is following the post author.
+ * @param {boolean} isLiked - Whether the user has liked the post.
+ * @param {boolean} isUserPost - Whether the user is the post author.
+ * @param {boolean} isViewPost - Whether the user is viewing the post.
+ * @returns The HTML element that will be rendered.
+ */
+
 export function createPostHTML(
   post: PostResponse,
   isFollowing: boolean,

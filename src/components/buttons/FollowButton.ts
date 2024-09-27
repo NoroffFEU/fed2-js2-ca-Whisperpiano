@@ -31,6 +31,10 @@ followButtonTemplate.innerHTML = `
 
 `;
 
+/**
+ * Button that allows the user to follow or unfollow a user.
+ */
+
 export class FollowButton extends HTMLElement {
   // Debouncing state
   private isProcessing: boolean = false;

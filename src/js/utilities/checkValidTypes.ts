@@ -1,4 +1,7 @@
-// Function to check if the file type is valid
+/**
+ * Checks if the file type is valid.
+ * @param e The event object.
+ */
 
 export function checkValidTypes(e: Event) {
   const input = e.target as HTMLInputElement;

@@ -1,6 +1,10 @@
 import { uploadImage } from "@/js/api/imgur/imgur";
 import { createPost } from "@api/post/create";
 
+/**
+ * Handles the create post form submission.
+ */
+
 export async function onCreatePost(event: Event) {
   event.preventDefault();
 

@@ -27,6 +27,10 @@ logoutButtonTemplate.innerHTML = `
   </button>
 `;
 
+/**
+ * Button that allows the user to logout.
+ */
+
 export class LogoutButton extends HTMLElement {
   constructor() {
     super();

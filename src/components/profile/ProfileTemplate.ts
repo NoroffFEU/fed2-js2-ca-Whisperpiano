@@ -5,6 +5,15 @@ import { createPostHTML } from "../cards/PostCardTemplate";
 import { readPost } from "@/js/api/post/read";
 import { getUser } from "@/js/utilities/getUser";
 
+/**
+ * Creates a profile HTML element.
+ *
+ * @param {ProfileResponse} profile - The profile object to create the HTML element from.
+ * @param {boolean} isFollowing - Whether the user is following the profile.
+ * @param {boolean} isUserProfile - Whether the user is the profile owner.
+ * @returns The HTML element that will be rendered.
+ */
+
 export async function createProfileHTML(
   profile: ProfileResponse,
   isFollowing: boolean,

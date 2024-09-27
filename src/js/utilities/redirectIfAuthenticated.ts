@@ -1,4 +1,6 @@
-// Function to redirect to home page if user is authenticated
+/**
+ * Redirects the user to the home page if they are authenticated.
+ */
 
 export function redirectIfAuthenticated() {
   if (localStorage.token) {

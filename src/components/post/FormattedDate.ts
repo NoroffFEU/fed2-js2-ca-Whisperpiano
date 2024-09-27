@@ -22,6 +22,10 @@ formattedDateTemplate.innerHTML = `
   </div>
   `;
 
+/**
+ * Component that displays the formatted date of a post.
+ */
+
 export class FormattedDate extends HTMLElement {
   created: Date | null;
   updated: Date | null;

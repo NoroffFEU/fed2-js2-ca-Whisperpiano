@@ -18,6 +18,10 @@ async function loadPostEditPage() {
   }
 }
 
+/**
+ * Sets the valid types for the edit post form.
+ */
+
 function setValidTypes() {
   const input = document.querySelector(
     "input[type='file']"
@@ -27,6 +31,11 @@ function setValidTypes() {
 
   input.addEventListener("change", checkValidTypes);
 }
+
+/**
+ * Fetches and populates the form with the post data.
+ * @param editPostForm The form element to populate.
+ */
 
 async function fetchAndPopulateForm(editPostForm: HTMLFormElement) {
   const id = Number(new URLSearchParams(window.location.search).get("id"));

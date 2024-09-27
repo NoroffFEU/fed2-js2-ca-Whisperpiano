@@ -51,6 +51,10 @@ cardProfileTemplate.innerHTML = `
     </div>
 `;
 
+/**
+ * Component that displays the profile of a user.
+ */
+
 export class CardProfile extends HTMLElement {
   static get observedAttributes() {
     return ["data-username", "data-avatar-url"];
