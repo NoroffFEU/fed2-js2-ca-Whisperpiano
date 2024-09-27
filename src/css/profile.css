@@ -1,0 +1,61 @@
+.profile__container {
+  & .profile__header {
+    & .profile__banner {
+      max-width: 100%;
+      max-height: 200px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & .profile__avatar__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding: 1rem;
+
+      & .profile__avatar {
+        aspect-ratio: 1;
+        width: 100px;
+        border-radius: 1rem;
+        border: 1px solid #ccc;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    & .profile__nickname {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding-inline: 1.25rem;
+
+      & span:first-of-type {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      & span:last-of-type {
+        font-size: 0.8rem;
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
+  & .posts__title {
+    padding: 1rem;
+  }
+  & .profile__header__stats {
+    padding: 1rem;
+    & div:last-child {
+      display: flex;
+      gap: 0.65rem;
+    }
+  }
+
+  & .profile__posts {
+    padding: 1rem;
+  }
+}

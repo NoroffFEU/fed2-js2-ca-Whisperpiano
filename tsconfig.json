@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types/*": ["src/types/*"],
+      "@api/*": ["src/js/api/*"],
+      "@ui/*": ["src/js/ui/*"],
+      "@router/*": ["src/js/router/*"],
+      "@utilities/*": ["src/js/utilities/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

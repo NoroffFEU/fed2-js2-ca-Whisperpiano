@@ -1,17 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noroff FED2 JS2 CA</title>
-    <script type="module" src="/src/app.js"></script>
-  </head>
-  <body>
-    <h1>Profile</h1>
+    <title>Profile | Noroff - Social Network</title>
 
-    <form name="updateProfile">
-      <button>Update Profile</button>
-    </form>
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+
+    <meta name="author" content="Jesus A. Herrero" />
+
+    <meta property="og:title" content="Profile | Noroff - Social Network" />
+    <meta
+      property="og:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+
+    <meta
+      property="og:image"
+      content="https://support.noroff.no/hc/theming_assets/01HZPPTZGC4N8F8NSPBQHJT16E"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Profile | Noroff - Social Network" />
+    <meta
+      name="twitter:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+    <meta
+      name="twitter:image"
+      content="https://support.noroff.no/hc/theming_assets/01HZPPTZGC4N8F8NSPBQHJT16E"
+    />
+    
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script type="module" src="../src/app.ts"></script>
+  </head>
+
+  <body class="home-page">
+    <header>
+      <div class="logo__container">
+        <logo-component></logo-component>
+      </div>
+      <div class="nav__container">
+        <a href="../../home/">🏠 Home</a>
+        <a href="../../explore/">🔍 Explore</a>
+        <a href="javascript:void(0)">🔔 Notifications</a>
+        <a href="javascript:void(0)">🔖 Bookmarks</a>
+        <a href="javascript:void(0)">❤️ Favorites</a>
+        <a href="javascript:void(0)">📝 Lists</a>
+        <a href="javascript:void(0)">⚙️ Preferences</a>
+      </div>
+      </div>
+    </header>
+    <main>
+      <section class="scroll-section">
+        <div class="posts__container__header">
+          <a data-is-active="true" href="javascript:void(0)">👤 Profile</a>
+        </div>
+        <article id="posts">
+        </article>
+      </section>
+    </main>
+    <aside>
+      <form name="search">
+        <input type="text" name="search" placeholder="Search" />
+      </form>
+
+      <div class="profile__container">
+      </div>
+
+      <div class="user-actions">
+        <a href="../../post/create/">Create post</a>
+        <logout-button>Logout</logout-button>
+      </div>
+    </aside>
   </body>
 </html>

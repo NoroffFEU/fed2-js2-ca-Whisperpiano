@@ -1,0 +1,30 @@
+/* Colors, variables and fonts */
+
+:root {
+  --primary-color: #1e1e1e;
+  --secondary-color: #ccc;
+  --tertiary-color: #282828;
+
+  --text-color-primary: #e0e0e0;
+  --text-color-secondary: #b3b3b3;
+
+  --link-color: #bb86fc;
+
+  --error-color: #cf6679;
+  --success-color: #54d267;
+
+  --button-primary-color: #3700b3;
+  --button-secondary-color: #03dac6;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family);
+}
+
+a {
+  color: var(--link-color);
+}

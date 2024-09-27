@@ -1,0 +1,16 @@
+#search {
+  max-width: 600px;
+
+  & .profiles {
+    margin-block: 0;
+  }
+
+  & ul {
+    border: 1px solid var(--secondary-color);
+
+    & li {
+      padding: 1rem;
+      border-bottom: 1px solid var(--secondary-color);
+    }
+  }
+}

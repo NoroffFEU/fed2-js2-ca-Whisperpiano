@@ -1,22 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noroff - Social Network</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noroff FED2 JS2 CA</title>
-  <script type="module" src="/src/app.js"></script>
-</head>
+    <meta
+      name="keywords"
+      content="social network, noroff, javascript, typescript, networking platform, social media app"
+    />
 
-<body>
-  <img src="/images/noroff-logo.png" alt="Noroff Logo" />
+    <meta name="author" content="Jesus A. Herrero" />
 
-  <h1>Home</h1>
+    <meta property="og:title" content="Noroff - Social Network" />
+    <meta
+      property="og:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
 
-  <a href="/profile/">My Profile</a>
-  <a href="/auth/login/">Login</a>
-  <a href="/auth/register/">Register</a>
-  <button>Logout</button>
-</body>
+    <meta property="og:image" content="https://imgur.com/zaXrckP" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noroff - Social Network" />
+    <meta
+      name="twitter:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+    <meta name="twitter:image" content="https://imgur.com/zaXrckP" />
+
+    <script type="module" src="./src/app.ts"></script>
+  </head>
+
+  <body>
+    <main class="auth-page">
+      <article>
+        <div class="logo__container">
+          <img
+            class="logo"
+            src="/images/noroff-logo-auth.png"
+            alt="Noroff Logo"
+          />
+        </div>
+        <h1>Welcome to the Noroff Social Network</h1>
+        <p>
+          Explore our social network and connect with other like-minded
+          individuals. Start by logging in or registering to get started.
+        </p>
+        <div class="auth-buttons">
+          <a class="login-btn" href="./login/">Login</a> or
+          <a class="register-btn" href="./register/">Register</a>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>

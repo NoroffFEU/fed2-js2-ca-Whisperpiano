@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Noroff - Social Network</title>
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+
+    <meta name="author" content="Jesus A. Herrero" />
+
+    <meta property="og:title" content="Register | Noroff - Social Network" />
+    <meta
+      property="og:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+
+    <meta
+      property="og:image"
+      content="https://support.noroff.no/hc/theming_assets/01HZPPTZGC4N8F8NSPBQHJT16E"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Register | Noroff - Social Network" />
+    <meta
+      name="twitter:description"
+      content="Explore our social network and connect with other like-minded individuals. Start by logging in or registering to get started."
+    />
+    <meta
+      name="twitter:image"
+      content="https://support.noroff.no/hc/theming_assets/01HZPPTZGC4N8F8NSPBQHJT16E"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script type="module" src="../src/app.ts"></script>
+  </head>
+
+  <body>
+    <main class="auth-page">
+      <article>
+        <div class="logo__container">
+          <img
+            class="logo"
+            src="/images/noroff-logo-auth.png"
+            alt="Noroff Logo"
+          />
+        </div>
+        <h1>Register</h1>
+
+        <form name="register">
+          <div>
+            <label for="name">Name <span class="required">*</span></label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              maxlength="20"
+              pattern="^[\w]+$"
+              title="Please enter a username using only letters and numbers"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              pattern="^[\w\-.]+@(stud\.)?noroff\.no$"
+              title="Please enter a valid noroff.no or stud.noroff.no address"
+            />
+          </div>
+
+          <div>
+            <label for="password"
+              >Password <span class="required">*</span></label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="8"
+            />
+          </div>
+
+          <div class="login-buttons">
+            <button>Register</button>
+            <a href="../login/">Login</a>
+          </div>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,1 +1,0 @@
-alert("Auth Index Page");
