@@ -1,4 +1,4 @@
-[![Live Preview](https://img.shields.io/badge/Live-Preview-brightgreen)]([https://your-live-preview-link.com](https://noroffsocial.netlify.app))
+[![Live Preview](https://img.shields.io/badge/Live-Preview-brightgreen)](https://noroffsocial.netlify.app)
 [![Report Bug](https://img.shields.io/badge/Report-Bug-red)](https://github.com/NoroffFEU/fed2-js2-ca-Whisperpiano/issues)
 [![Request Feature](https://img.shields.io/badge/Request-Feature-blue)](https://github.com/NoroffFEU/fed2-js2-ca-Whisperpiano/issues)
 
