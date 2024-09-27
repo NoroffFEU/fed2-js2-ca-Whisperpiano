@@ -1,4 +1,4 @@
-// Constants
+// CONSTANTS
 export interface APIAuthEndpoints {
   BASE: string;
   LOGIN: string;
